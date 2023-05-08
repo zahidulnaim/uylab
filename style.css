@@ -1,0 +1,49 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+.menubar ul li a{
+    color: white;
+    font-size: 22px;
+    text-transform: capitalize;
+    display: block;
+}
+.menubar{
+    background-color: teal;
+    text-align: center;
+}
+.menubar ul{
+    display: inline-flex;
+}
+.menubar ul li{
+    height: 50;
+    width: 140px;
+    line-height: 50px ;
+}
+.menubar ul li a:hover{
+background-color: red;
+/* font-size: 26px; */
+color: black;
+transition: all linear.3s;
+}
+.menubar ul li a:focus{
+    background-color: blue;
+    color: brown;
+}
+.dropdown{
+    visibility: hidden;
+}
+.menubar ul li:hover .dropdown{
+    visibility: visible;
+}
+.menubar ul li:hover .dropdown ul{
+    display: block;
+    background-color: teal;
+}
